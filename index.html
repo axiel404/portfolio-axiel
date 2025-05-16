@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio do Axiel</title>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio</title>
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Estilo -->
+    <link rel="stylesheet" href="estilo.css" />
 </head>
+
 <body>
-    
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/logotipo-tech.png" width="300px" height="200px" alt="Logo" />
+                </a>
+            </div>
+
+            <nav class="desktop">
+                <ul>
+                    <li><a class="sections" href="#Introdução">Introdução</a></li>
+                    <li><a class="sections" href="#Sobre-mim">Sobre mim</a></li>
+                    <li><a class="sections" href="#Especialidades">Especialidades</a></li>
+                    <li><a class="sections" href="#Aprendizado">Aprendizado</a></li>
+                    <li><a class="sections" href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contact">
+                <a href="#">
+                    <button type="button">Contato</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="Introdução" class="top_of_page">
+            <div class="flex">
+                <div class="txt-top-page">
+                    <h1>
+                        Eu sou Axiel, futuro dev fullstack<br />
+                        construindo meu futuro no mundo da programação.
+                    </h1>
+
+                    <p> 
+                        Aqui eu tô reunindo tudo que venho aprendendo na área de programação,<br />
+                        mostrando um pouco sobre mim, minhas habilidades e os projetos que venho desenvolvendo.
+                    </p>
+
+                </div>
+                <div>
+                    <img class="img-top-page" src="images/person.png" width="300px" alt="avatar mim representando" />
+                </div>
+            </div>
+            <div class="btn-contact">
+                <a href="#">
+                    <button type="button">Entre em contato</button>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <a href="https://wa.me/5599999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+                title="Fale comigo no WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </section>
+
+        <section id="Sobre-mim" class="about-me">
+            <h2>Sobre mim</h2>
+
+            <div class="about-container">
+                <img id="img-about" src="images/Imagem.jpg" alt="Foto de perfil me representando" />
+
+                <div class="about-text">
+                    <p>
+                        <span>Muito prazer!<br />Sou Axiel Ferreira.</span><br /><br />
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus delectus illo. Est accusantium, eos id nobis, porro similique quo minus, nesciunt iure sapiente velit? Ratione earum cumque quam pariatur?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Especialidades" class="specialties">
+            <h2><span>Minhas especialidades</span></h2>
+
+            <div class="specialty-container">
+                <!-- Exemplo de especialidade -->
+                <div class="box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>91<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">JavaScript</h2>
+                </div>
+                <!-- Adicione outras como já tinha -->
+            </div>
+        </section>
+
+        <section id="projetos" class="project">
+            <h2>Meus projetos</h2>
+            <div class="box-projects"></div>
+        </section>
+    </main>
 </body>
+
 </html>
