@@ -1,23 +1,21 @@
+/* === base do seu CSS (resumido aqui) === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: poppins, sans-serif;
     scroll-behavior: smooth;
-
-
 }
 
 body {
-
     background-color: #093362;
     height: 100%;
-
+    color: #e2dede;
+    /* para textos gerais */
 }
 
 .interface {
     margin: 0 auto;
-
 }
 
 .flex {
@@ -29,11 +27,12 @@ header .interface {
     justify-content: space-between;
 }
 
+/* Menu */
 .sections {
     color: #e2dede;
     text-decoration: none;
     display: inline-block;
-    transition: .2s;
+    transition: 0.2s;
     font-size: 20px;
     padding-bottom: 3px;
     border-bottom: 4px solid transparent;
@@ -43,7 +42,7 @@ header .interface {
 .sections:hover {
     color: #fff;
     transform: scale(1.05);
-     border-bottom: 2px solid #00cccc;
+    border-bottom: 2px solid #00cccc;
 }
 
 header nav {
@@ -53,7 +52,6 @@ header nav {
 .desktop ul li {
     display: inline-block;
     padding: 40px;
-
 }
 
 .btn-contact button {
@@ -65,20 +63,18 @@ header nav {
     background-color: #00ff40;
     border-radius: 30px;
     cursor: pointer;
-
 }
 
 .btn-contact button:hover {
     box-shadow: 0 0 8px #00bb35;
     transform: scale(1.05);
-    transition: .2s;
+    transition: 0.2s;
 }
 
+/* Introdução */
 .top_of_page {
-    padding: 40px 4%;
-    min-height: 100vh;
     padding: 60px 4%;
-
+    min-height: 100vh;
 }
 
 .top_of_page .txt-top-page {
@@ -86,25 +82,23 @@ header nav {
     margin-right: 100px;
     color: #fff;
     font-size: 30px;
-
 }
 
 .top_of_page .txt-top-page p {
     margin: 40px 0;
 }
 
+/* Alinhamento do flex na introdução */
 section .top_of_page .flex {
     align-items: center;
     justify-content: center;
-
 }
 
 section .img-top-page {
     border-radius: 40%;
-
 }
 
-
+/* WhatsApp flutuante */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -125,26 +119,24 @@ section .img-top-page {
     transition: 2s;
 }
 
+/* Sobre mim */
 .about-container {
     display: flex;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    /* ajuda em telas pequenas */
     margin-top: 20px;
     padding: 40px;
-
 }
+
 .about-me {
-    padding: 40px 4%;
-    min-height: 100vh;
     padding: 60px 4%;
+    min-height: 100vh;
 }
 
 .about-me h2 {
     text-align: center;
     font-size: 35px;
-
 }
 
 #img-about {
@@ -156,11 +148,33 @@ section .img-top-page {
     max-width: 1200px;
     text-align: justify;
     font-size: 28px;
+    color: #e2dede;
 }
+
 .about-text p {
     margin: 20px 0;
-    color: #fff;
+}
 
+.btn-social {
+    margin-left: 300px;
+    margin-bottom: 200px;
+}
+
+.btn-social button {
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #00ff40;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.btn-social button:hover {
+    transform: scale(1.1);
+    transition: 2s;
 }
 
 @media (max-width: 768px) {
@@ -177,17 +191,29 @@ section .img-top-page {
         width: 100%;
         max-width: 300px;
     }
+
+    .btn-social {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
 }
 
+/* Especialidades */
 .specialties {
     padding: 40px 4%;
 }
 
-
 .specialties h2 {
-    color: #000000;
+    color: #e2dede;
     font-size: 38px;
     text-align: center;
+}
+
+.specialty-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .specialty-container:hover {
@@ -195,16 +221,7 @@ section .img-top-page {
     transition: 2s;
 }
 
-.specialty-container {
-    display: flex;
-
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
 .box {
-
     width: 300px;
     height: 400px;
     display: flex;
@@ -212,8 +229,7 @@ section .img-top-page {
     align-items: center;
     position: relative;
     flex-direction: column;
-    transition: transform .2s;
-
+    transition: transform 0.2s;
 }
 
 .percent {
@@ -226,7 +242,6 @@ section .img-top-page {
     width: 150px;
     height: 150px;
     position: relative;
-
 }
 
 .percent circle {
@@ -244,7 +259,6 @@ section .img-top-page {
 .percent circle:nth-child(1) {
     stroke-dashoffset: 0;
     stroke: #f3f3f3;
-
 }
 
 .percent circle:nth-child(2) {
@@ -264,9 +278,253 @@ section .img-top-page {
 .text {
     margin-top: 10px;
     font-size: 18px;
+    color: #e2dede;
+}
+
+/* Projetos */
+.project {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px #00ff40;
 }
 
 .project h2 {
     text-align: center;
     font-size: 38px;
+    margin-bottom: 100px;
+}
+
+section .project .flex {
+    justify-content: space-around;
+}
+
+/* Boxes dos projetos */
+.img-import,
+.img-converter,
+.img-crud {
+    width: 360px;
+    height: 460px;
+    margin: 0 100px;
+    padding: 20px;
+    background-color: #00bb35;
+    background-size: cover;
+    background-position: center;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-import {
+    background-image: url(images/gifs.png);
+}
+
+.img-import:hover {
+    background-position: 100% 100%;
+}
+
+.img-converter {
+    background-image: url(images/convert.png);
+}
+
+.img-converter:hover {
+    background-position: 100% 100%;
+}
+
+.img-crud {
+    background-image: url(images/crud.png);
+    background-position: 10% 0%;
+}
+
+.img-crud:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.72);
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* Depoimentos */
+.titulo-depoimento {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 100px;
+    color: #e2dede;
+}
+
+.depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #1a1a1a;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #e2dede;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.nome {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #00ff40;
+}
+
+.mensagem {
+    font-size: 0.95em;
+    color: #ccc;
+}
+
+/* Galeria */
+.titulogaleria {
+    padding: 20px 4%;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 60px;
+    color: #e2dede;
+}
+
+.gallery {
+    padding: 20px 4%;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.gallery-container img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.container-footer {
+    text-align: center;
+    padding: 20px;
+    color: #e2dede;
+    background-color: #0b2142;
+}
+
+.row-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 30px;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.social-icon a {
+    color: #e2dede;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon a:hover {
+    color: #00ff40;
+}
+
+hr {
+    border: 1px solid #00ff40;
+    margin: 10px auto;
+    width: 90%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    #img-about {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .btn-social {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container img {
+        width: 90%;
+        height: auto;
+    }
+
+    .project {
+        padding: 40px 4%;
+    }
+
+    .desktop ul li {
+        padding: 15px 20px;
+    }
+
+    .social-icon {
+        font-size: 24px;
+    }
 }

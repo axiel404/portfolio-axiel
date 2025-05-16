@@ -3,9 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Portfolio</title>
 
     <!-- Fonte -->
@@ -34,6 +32,8 @@
                     <li><a class="sections" href="#Especialidades">Especialidades</a></li>
                     <li><a class="sections" href="#Aprendizado">Aprendizado</a></li>
                     <li><a class="sections" href="#projetos">Projetos</a></li>
+                    <li><a class="sections" href="#depoimentos">Depoimentos</a></li>
+                    <li><a class="sections" href="#galeria">Galeria</a></li>
                 </ul>
             </nav>
 
@@ -90,6 +90,19 @@
                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus delectus illo. Est accusantium, eos id nobis, porro similique quo minus, nesciunt iure sapiente velit? Ratione earum cumque quam pariatur?
                     </p>
                 </div>
+
+                <!-- Botões sociais adicionados do segundo código -->
+                <div class="btn-social">
+                    <a href="mailto:seuemail@exemplo.com?subject=Olá!&body=Olá, gostaria de saber mais sobre você." target="_blank" rel="noopener" aria-label="E-mail">
+                        <button type="button" aria-label="E-mail"><i class="bi bi-envelope-at-fill"></i></button>
+                    </a>
+                    <a href="https://github.com/seuusuario" target="_blank" rel="noopener" aria-label="Github">
+                        <button type="button" aria-label="Github"><i class="bi bi-github"></i></button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/seulinkedin/" target="_blank" rel="noopener" aria-label="Linkedin">
+                        <button type="button" aria-label="Linkedin"><i class="bi bi-linkedin"></i></button>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -97,7 +110,6 @@
             <h2><span>Minhas especialidades</span></h2>
 
             <div class="specialty-container">
-                <!-- Exemplo de especialidade -->
                 <div class="box">
                     <div class="percent">
                         <svg>
@@ -110,7 +122,7 @@
                     </div>
                     <h2 class="text">JavaScript</h2>
                 </div>
-                <!-- Adicione outras como já tinha -->
+                <!-- Adicione outras especialidades conforme precisar -->
             </div>
         </section>
 
@@ -118,7 +130,64 @@
             <h2>Meus projetos</h2>
             <div class="box-projects"></div>
         </section>
+
+        <!-- Depoimentos adicionados -->
+        <h2 class="titulo-depoimento">O que dizem sobre nós</h2>
+        <section id="depoimentos" class="depoimentos">
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de Ana">
+                <div class="nome">Ana Souza</div>
+                <div class="mensagem">A equipe foi super atenciosa. Com certeza voltarei a contratar!</div>
+            </div>
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de João">
+                <div class="nome">João Pedro</div>
+                <div class="mensagem">Excelente serviço! Profissionalismo do começo ao fim.</div>
+            </div>
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Foto de Marina">
+                <div class="nome">Marina Lima</div>
+                <div class="mensagem">Me senti acolhida e bem atendida. Super recomendo!</div>
+            </div>
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Foto de Carlos">
+                <div class="nome">Carlos Mendes</div>
+                <div class="mensagem">Serviço rápido, de qualidade e com preço justo. Parabéns!</div>
+            </div>
+        </section>
+
+        <!-- Galeria adicionada -->
+        <section id="galeria" class="gallery">
+            <h2 class="titulogaleria">Galeria</h2>
+            <div class="gallery-container">
+                <img src="images/convert.png" alt="Imagem 1" />
+                <img src="images/convert.png" alt="Imagem 2" />
+                <img src="images/convert.png" alt="Imagem 3" />
+            </div>
+            <div class="gallery-container">
+                <img src="images/galeria4.jpg" alt="Imagem 4" />
+                <img src="images/galeria5.jpg" alt="Imagem 5" />
+                <img src="images/galeria5.jpg" alt="Imagem 6" />
+            </div>
+        </section>
     </main>
+
+    <!-- Footer adicionado -->
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="social-icon">
+                    <a style="padding: 10px;" href="https://google.com" class="fab fa-linkedin-in" target="_blank"></a>
+                    <a style="padding: 10px;" href="https://google.com" class="fab fa-github wow fadeIn" target="_blank"></a>
+                    <a style="padding: 10px;" href="https://google.com" class="fab fa-instagram wow fadeIn" target="_blank"></a>
+                    <a style="padding: 10px;" href="https://google.com" class="fab fa-telegram wow fadeIn" target="_blank"></a>
+                    <a style="padding: 10px;" href="https://google.com" class="fab fa-facebook wow fadeIn" target="_blank"></a>
+                </div>
+                <hr />
+            </div>
+            <p>Copyright 2025 © Equipe C-Jovem</p>
+        </div>
+    </footer>
 </body>
 
 </html>
