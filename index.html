@@ -19,12 +19,6 @@
 <body>
     <header>
         <div class="interface">
-            <div class="logo">
-                <a href="#" title="Logo">
-                    <img src="images/logotipo-tech.png" width="300px" height="200px" alt="Logo" />
-                </a>
-            </div>
-
             <nav class="desktop">
                 <ul>
                     <li><a class="sections" href="#Introdução">Introdução</a></li>
@@ -32,13 +26,13 @@
                     <li><a class="sections" href="#Especialidades">Especialidades</a></li>
                     <li><a class="sections" href="#Aprendizado">Aprendizado</a></li>
                     <li><a class="sections" href="#projetos">Projetos</a></li>
-                    <li><a class="sections" href="#depoimentos">Depoimentos</a></li>
                     <li><a class="sections" href="#galeria">Galeria</a></li>
+                    <li><a class="sections" href="#depoimentos">Depoimentos</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contact">
-                <a href="#">
+                <a href="#contato">
                     <button type="button">Contato</button>
                 </a>
             </div>
@@ -54,18 +48,14 @@
                         construindo meu futuro no mundo da programação.
                     </h1>
 
-                    <p> 
+                    <p>
                         Aqui eu tô reunindo tudo que venho aprendendo na área de programação,<br />
                         mostrando um pouco sobre mim, minhas habilidades e os projetos que venho desenvolvendo.
                     </p>
-
-                </div>
-                <div>
-                    <img class="img-top-page" src="images/person.png" width="300px" alt="avatar mim representando" />
                 </div>
             </div>
             <div class="btn-contact">
-                <a href="#">
+                <a href="#contato">
                     <button type="button">Entre em contato</button>
                 </a>
             </div>
@@ -80,64 +70,142 @@
 
         <section id="Sobre-mim" class="about-me">
             <h2>Sobre mim</h2>
-
             <div class="about-container">
-                <img id="img-about" src="images/Imagem.jpg" alt="Foto de perfil me representando" />
-
                 <div class="about-text">
                     <p>
                         <span>Muito prazer!<br />Sou Axiel Ferreira.</span><br /><br />
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus delectus illo. Est accusantium, eos id nobis, porro similique quo minus, nesciunt iure sapiente velit? Ratione earum cumque quam pariatur?
+                        Tenho 16 anos, sou estudante e futuro desenvolvedor fullstack.
+                        Entrei no mundo da programação por conta do meu curso técnico de Informática na escola, e também
+                        estou fazendo um curso de desenvolvimento Fullstack, onde aprendo a criar soluções completas —
+                        do frontend ao backend.
+                        <br /><br />
+                        Gosto de criar projetos que unem criatividade com funcionalidade, e estou sempre buscando
+                        evoluir — seja em HTML, CSS, JavaScript ou qualquer outro desafio que aparecer pelo caminho.
+                        <br /><br />
+                        Além dos códigos, curto anime, tecnologia e resolver problemas de forma prática.
+                        Meu objetivo é crescer na área tech e, quem sabe, inspirar outras pessoas a descobrirem o poder
+                        da programação.
                     </p>
-                </div>
 
-                <!-- Botões sociais adicionados do segundo código -->
-                <div class="btn-social">
-                    <a href="mailto:seuemail@exemplo.com?subject=Olá!&body=Olá, gostaria de saber mais sobre você." target="_blank" rel="noopener" aria-label="E-mail">
-                        <button type="button" aria-label="E-mail"><i class="bi bi-envelope-at-fill"></i></button>
-                    </a>
-                    <a href="https://github.com/seuusuario" target="_blank" rel="noopener" aria-label="Github">
-                        <button type="button" aria-label="Github"><i class="bi bi-github"></i></button>
-                    </a>
-                    <a href="https://www.linkedin.com/in/seulinkedin/" target="_blank" rel="noopener" aria-label="Linkedin">
-                        <button type="button" aria-label="Linkedin"><i class="bi bi-linkedin"></i></button>
-                    </a>
+
                 </div>
             </div>
         </section>
 
         <section id="Especialidades" class="specialties">
             <h2><span>Minhas especialidades</span></h2>
-
             <div class="specialty-container">
                 <div class="box">
                     <div class="percent">
+                        <h2 class="text">HTML</h2>
                         <svg>
                             <circle cx="70" cy="70" r="70"></circle>
+                            <circle class="circle-html" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>75<span>%</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="percent">
+                        <h2 class="text">CSS</h2>
+                        <svg>
                             <circle cx="70" cy="70" r="70"></circle>
+                            <circle class="circle-css" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>50<span>%</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="percent">
+                        <h2 class="text">JavaScript</h2>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle class="circle-js" cx="70" cy="70" r="70"></circle>
                         </svg>
                         <div class="num">
                             <h2>91<span>%</span></h2>
                         </div>
                     </div>
-                    <h2 class="text">JavaScript</h2>
                 </div>
-                <!-- Adicione outras especialidades conforme precisar -->
             </div>
         </section>
 
-        <section id="projetos" class="project">
-            <h2>Meus projetos</h2>
-            <div class="box-projects"></div>
+        <section id="Aprendizado" class="aprendizado">
+            <h2><span>Meu aprendizado</span></h2>
+            <div class="aprendizado-container">
+                <div class="box">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h3>Front-End</h3>
+                    <p>Tenho estudado HTML, CSS e JavaScript para desenvolver interfaces modernas, responsivas e
+                        acessíveis.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Back-End</h3>
+                    <p>Tenho iniciado os estudos em lógica de programação e linguagens como Java, além de práticas com
+                        banco de dados.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Projetos Práticos</h3>
+                    <p>Participo de projetos escolares e pessoais que reforçam o conteúdo aprendido na teoria.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Git & Versionamento</h3>
+                    <p>Tenho aprendido a usar o Git para versionar meus projetos, colaborar com outros devs e organizar
+                        melhor meu código.</p>
+                </div>
+                <div class="tips-technology">
+                    <h3>Dicas para quem está começando</h3>
+                    <ul class="list-technology">
+                        <li>➡️ Não tente aprender tudo de uma vez. Escolha uma stack e vá fundo!</li>
+                        <li>➡️ Pratique mais do que consome conteúdo. A prática fixa o conhecimento.</li>
+                        <li>➡️ Use o GitHub como seu portfólio vivo. Commits frequentes mostram evolução.</li>
+                        <li>➡️ Não tenha medo de errar. Aprendizado vem dos erros também.</li>
+                        <li>➡️ Participe de comunidades. Você não precisa aprender sozinha(o)!</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <!-- Depoimentos adicionados -->
-        <h2 class="titulo-depoimento">O que dizem sobre nós</h2>
+
+        <section id="projetos" class="project">
+            <h2>Meus projetos</h2>
+            <div class="flex">
+                <div class="img-import">
+                    <a href="https://github.com/axiel404/portfolio-axiel" target="_blank" rel="noopener noreferrer"
+                        title="Projeto 1">
+                        <div class="overlay">Portifólio</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="gallery">
+            <h2 class="titulogaleria">Galeria</h2>
+            <div class="gallery-container">
+                <img src="img/Imagens 1-galeria.jpg" alt="Imagem 1" />
+                <img src="img/1608288017889_livros.png" alt="Imagem 2" />
+                <img src="img/photo-1456513080510-7bf3a84b82f8.jfif" alt="Imagem 3" />
+            </div>
+            <div class="gallery-container">
+                <img src="img/images.jfif" alt="Imagem 4" />
+                <img src="img/onepiece.png" alt="Imagem 5" />
+                <img src="img/academia.webp" alt="Imagem 6" />
+            </div>
+        </section>
+
+        <h2 class="titulo-depoimento">O que dizem sobre mim</h2>
         <section id="depoimentos" class="depoimentos">
             <div class="card">
                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de Ana">
                 <div class="nome">Ana Souza</div>
-                <div class="mensagem">A equipe foi super atenciosa. Com certeza voltarei a contratar!</div>
+                <div class="mensagem">O Axiel foi super atencioso. Com certeza voltarei a contratar!</div>
             </div>
             <div class="card">
                 <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de João">
@@ -156,34 +224,35 @@
             </div>
         </section>
 
-        <!-- Galeria adicionada -->
-        <section id="galeria" class="gallery">
-            <h2 class="titulogaleria">Galeria</h2>
-            <div class="gallery-container">
-                <img src="images/convert.png" alt="Imagem 1" />
-                <img src="images/convert.png" alt="Imagem 2" />
-                <img src="images/convert.png" alt="Imagem 3" />
-            </div>
-            <div class="gallery-container">
-                <img src="images/galeria4.jpg" alt="Imagem 4" />
-                <img src="images/galeria5.jpg" alt="Imagem 5" />
-                <img src="images/galeria5.jpg" alt="Imagem 6" />
-            </div>
+        <!-- NOVA SEÇÃO CONTATO -->
+        <section id="input" class="forms">
+            <h2><span>Entre em contato.</span></h2>
+            <form>
+                <input type="text" placeholder="Nome completo:" required />
+                <input type="email" placeholder="E-mail:" required />
+                <input type="tel" placeholder="Telefone:" />
+                <textarea placeholder="Digite sua mensagem:" required></textarea>
+                <input id="btn-send" type="submit" value="Enviar" />
+            </form>
         </section>
+
+        <br><br>
     </main>
 
-    <!-- Footer adicionado -->
     <footer>
+
         <div class="container-footer">
             <div class="row-footer">
                 <div class="social-icon">
-                    <a style="padding: 10px;" href="https://google.com" class="fab fa-linkedin-in" target="_blank"></a>
-                    <a style="padding: 10px;" href="https://google.com" class="fab fa-github wow fadeIn" target="_blank"></a>
-                    <a style="padding: 10px;" href="https://google.com" class="fab fa-instagram wow fadeIn" target="_blank"></a>
-                    <a style="padding: 10px;" href="https://google.com" class="fab fa-telegram wow fadeIn" target="_blank"></a>
-                    <a style="padding: 10px;" href="https://google.com" class="fab fa-facebook wow fadeIn" target="_blank"></a>
+                    <a style="padding: 10px;" href="https://br.linkedin.com" class="fab fa-linkedin-in"
+                        target="_blank"></a>
+                    <a style="padding: 10px;" href="https://google.com" class="fab fa-github wow fadeIn"
+                        target="_blank"></a>
+                    <a style="padding: 10px;" href="https://www.instagram.com/axiel_ferreira"
+                        class="fab fa-instagram wow fadeIn" target="_blank"></a>
+
                 </div>
-                <hr />
+
             </div>
             <p>Copyright 2025 © Equipe C-Jovem</p>
         </div>
