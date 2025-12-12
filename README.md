@@ -9,7 +9,8 @@ A proposta é compartilhar minha trajetória como desenvolvedor e oferecer uma n
 
 ## Acesso
 
-Você pode visualizar o portfólio diretamente por meio do navegador após clonar ou baixar este repositório:
+Você pode visualizar o portfólio diretamente por meio do navegador após clonar, baixar este repo
 
-```bash
+```bash6
 git clone https://github.com/axiel404/portfolio-axiel.git
+https://axiel404.github.io/portfolio-axiel/
